@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset='utf=8')
+    title Random boxes
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Let's randomly style some awesome boxes!
+    br
+    form(method='post', action='/boxes')
+      label How many Boxes?
+      input(type='text', name='boxes', placeholder='20', autofocus='true')
+      br
+      label Between what pixel widths?
+      input(type='text', name='width', placeholder='40-80')
+      br
+      label Between what pixel heights?
+      input(type='text', name='height', placeholder='40-80')
+      label What colors would you like to use?
+      textarea(name='colors', placeholder='green, blue, yellow') green, yellow, blue
+      br
+      button(type='submit', name='submit') Submit
