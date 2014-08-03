@@ -1,0 +1,9 @@
+div {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  border: 1px dotted black;
+}
+a {
+  text-decoration: none;
+}

@@ -9,14 +9,15 @@ html
     br
     form(method='post', action='/boxes')
       label How many Boxes?
-      input(type='text', name='boxes', placeholder='20', autofocus='true')
+      input(type='text', name='boxes', placeholder='20', autofocus='true', required='true')
       br
       label Between what pixel widths?
-      input(type='text', name='width', placeholder='40-80')
+      input(type='text', name='width', placeholder='40-80', required='true')
       br
       label Between what pixel heights?
-      input(type='text', name='height', placeholder='40-80')
+      input(type='text', name='height', placeholder='40-80', required='true')
+      br
       label What colors would you like to use?
-      textarea(name='colors', placeholder='green, blue, yellow') green, yellow, blue
+      textarea(name='colors', placeholder='green, blue, yellow', required='true') green, yellow, blue
       br
       button(type='submit', name='submit') Submit

@@ -6,8 +6,8 @@ html
     link(rel='stylesheet', href='/css/style.css')
   body
     h1 Your seletion of randomly styled boxes!
-    div
-      a(href='/boxes') Let's try that again...
-    - var b = 0
-    while b < boxes
-    div(style='width: {#widthArr[i]; height: {#heightArr[i]}')= b++
+    span: a(href='/boxes') Let's try that again...
+
+    each box in boxes
+      div(style='height: #{box.height}px; width:#{box.width}px; background-color:#{box.color};')
+
